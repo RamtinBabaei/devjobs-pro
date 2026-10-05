@@ -1,0 +1,32 @@
+{
+  "name": "devjobs-pro-v2",
+  "private": true,
+  "version": "2.1.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "test": "node --experimental-strip-types --test tests/run.ts",
+    "check": "npm run test && npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.104.0",
+    "@tailwindcss/vite": "4.1.14",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "react-router-dom": "6.30.6",
+    "tailwindcss": "4.1.14"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.16",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "5.0.4",
+    "typescript": "5.9.3",
+    "vite": "7.1.9"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
